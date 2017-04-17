@@ -208,7 +208,7 @@ namespace Bucket
 					cur = NULL;
 					break;
 				}
-				else if (cur->_next->_kv.first == key)
+				else if (cur->_kv.first == key)
 				{
 					prev->_next = cur->_next;
 					delete cur;
